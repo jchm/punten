@@ -1,0 +1,28 @@
+<div class="row-fluid">
+  <div class="span12">
+    <ol class="leaderboard unstyled scrollable">
+        <li ng-repeat="player in players | orderBy:predicate:true" ng-animate="'custom'">{{player.name}} <span class="points pull-right">{{player.points}}</span></li>
+    </ol>
+  </div>
+</div>
+
+<div class="fixed-footer">
+  <div class="row-fluid">
+    <div class="span12 add-points">
+      <form>
+      	<div class="controls form-inline">
+      		<div class="fake-select">
+            <select ng-model="player" ng-options="player.name for player in players" style="width:100%;">
+              <option value="">Kies...</option>
+            </select>
+          </div>
+      		<ul class="unstyled buttons">
+            <li ng-repeat="n in [1,2,3,5]"><button ng-click="addPoints(n)" class="btn btn-block">+{{n}}</button></li>
+          </ul>
+      	</div>
+      </form>
+    </div>
+  </div>
+</div>
+
+

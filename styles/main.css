@@ -1,0 +1,149 @@
+body, html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: #45d2bf;
+  padding: 0;
+}
+
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+}
+
+select {
+  font-size: 18px;
+  height: 40px;
+}
+
+.leaderboard {
+  margin-bottom: 0;
+}
+
+.leaderboard li {
+  padding: 15px 15px;
+  color: #175972;
+  font-size: 21px;
+}
+  .leaderboard li:first-child {
+    background: rgba(255, 255, 255, .7)
+  }
+
+  .leaderboard li:nth-child(2) {
+    background: rgba(255, 255, 255, .6)
+  }
+
+  .leaderboard li:nth-child(3) {
+    background: rgba(255, 255, 255, .5)
+  }
+
+  .leaderboard li:nth-child(4) {
+    background: rgba(255, 255, 255, .4)
+  }
+
+  .leaderboard li:nth-child(5) {
+    background: rgba(255, 255, 255, .3)
+  }
+
+  .points {
+    color: #eb5f3b;
+  }
+
+.unstyled li {
+  margin: 0;
+}
+
+.add-points {
+  overflow: auto;
+  margin-bottom: 0;
+}
+
+
+.fake-select {
+  background: #FFF;
+}
+
+.add-points select {
+  border-radius: 0;
+  background: transparent;
+  -webkit-appearance: none;
+  border: none;
+  outline: none;
+  padding-left: 15px;
+  font-weight: 500;
+  background-image: url(../img/arrow-combo.png);
+  background-repeat: no-repeat;
+  height: 63px;
+  background-position: 95% 50%;
+  overflow: auto;
+  font-weight: bold;
+}
+  .add-points select::selection {
+    border: none;
+  }
+
+  .add-points .fake-select:hover {
+    background-color: #f5f5f5;
+  }
+
+.buttons li {
+  width: 50%;
+  float: left;
+}
+
+.buttons button {
+  height: 73px;
+  border-radius: 0;
+  font-size: 16px;
+  font-weight: bold;
+  background: #FFF;
+  border-color: #f5f5f5;
+}
+  .buttons button:hover {
+    background: #f5f5f5;
+  }
+
+@media (max-width: 767px) {
+  body {
+    padding: 0;
+  }
+
+  .fixed-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .add-points select {
+      background-image: url(../img/arrow-combo@2x.png);
+      background-size: 14px 30px;
+      border-top: solid 1px #fff;
+  }
+}
+
+
+/* Animations */
+
+.custom-move-setup {
+  -webkit-transition: .7s linear all;
+  -moz-transition: .7s linear all;
+  -o-transition: .7s linear all;
+  transition: .7s linear all;
+  position:relative;
+}
+
+.custom-move-setup {
+  opacity:.8;
+  background-color: #fdcc02 !important;
+}
+.custom-move-setup.custom-move-start {
+  opacity:.4;
+  background-color: #fdcc02 !important;
+}
+
+
+
